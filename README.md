@@ -4,12 +4,23 @@
 
 refer to https://carla-ue5.readthedocs.io/en/latest/start_quickstart/
 
+you should download CARLA with tag `0.10.0`
+
 ## Start CARLA server in headless mode
 
 Start a terminal, and make sure to change venv path to match your venv (set up during install), then start the server with
+
 ```
 ./start_carla_server_headless.sh
 ```
+
+You should see this on the terminal, not other messages which could suggest errors.
+```
+Shutdown handler: initialize.
+5.5.0-0+UE5 1013 0
+Disabling core dumps.
+```
+This CARLA should be using Unreal Engine version 5.5, as seen above.
 
 ## Start client script to simulate and capture frames
 
